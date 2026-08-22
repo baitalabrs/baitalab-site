@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+2
+<html lang="pt-BR">
+3
+ 
+4
+<head>
+5
+<meta charset="UTF-8">
+6
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+7
+ 
+8
+<title>Baita Lab | Impressão 3D</title>
+9
+ 
+10
+<style>
+11
+ 
+12
+:root{
+13
+--verde:#00A651;
+14
+--vermelho:#E41E26;
+15
+--amarelo:#FFD100;
+16
+--preto:#111;
+17
+}
+18
+ 
+19
+*{
+20
+margin:0;
+21
+padding:0;
+22
+box-sizing:border-box;
+23
+font-family:Segoe UI, sans-serif;
+24
+}
+25
+ 
+26
+body{
+27
+background:white;
+28
+color:#222;
+29
+}
+30
+ 
+31
+header{
+32
+background:#111;
+33
+padding:20px;
+34
+display:flex;
+35
+justify-content:space-between;
+36
+align-items:center;
+37
+}
+38
+ 
+39
+.logo{
+40
+color:white;
+41
+font-size:2rem;
+42
+font-weight:bold;
+43
+}
+44
+ 
+45
+nav a{
+46
+color:white;
+47
+text-decoration:none;
+48
+margin-left:20px;
+49
+}
+50
+ 
+51
+.hero{
+52
+padding:100px 20px;
+53
+text-align:center;
+54
+background:linear-gradient(135deg,#111,#222);
+55
+color:white;
+56
+}
+57
+ 
+58
+.hero h1{
+59
+font-size:3.5rem;
+60
+margin-bottom:20px;
+61
+}
+62
+ 
+63
+.hero p{
+64
+font-size:1.2rem;
+65
+max-width:700px;
+66
+margin:auto;
+67
+}
+68
+ 
+69
+.botao{
+70
+display:inline-block;
+71
+margin-top:30px;
+72
+padding:15px 30px;
+73
+border-radius:8px;
+74
+text-decoration:none;
+75
+font-weight:bold;
+76
+}
+77
+ 
+78
+.whats{
+79
+background:var(--verde);
+80
+color:white;
+81
+}
+82
+ 
+83
+.orcamento{
+84
+background:var(--amarelo);
+85
+color:black;
+86
+margin-left:10px;
+87
+}
+88
+ 
+89
+section{
+90
+padding:80px 10%;
+91
+}
+92
+ 
+93
+.titulo{
+94
+text-align:center;
+95
+margin-bottom:50px;
+96
+font-size:2rem;
+97
+}
+98
+ 
+99
+.cards{
+100
+display:grid;
+101
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+102
+gap:25px;
+103
+}
+104
+ 
+105
+.card{
+106
+padding:25px;
+107
+background:#f5f5f5;
+108
+border-radius:12px;
+109
+text-align:center;
+110
+}
+111
+ 
+112
+.card:hover{
+113
+transform:translateY(-5px);
+114
+transition:.3s;
+115
+}
+116
+ 
+117
+.passos{
+118
+display:grid;
+119
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+120
+gap:20px;
+121
+}
+122
+ 
+123
+.passo{
+124
+background:#f9f9f9;
+125
+padding:25px;
+126
+border-radius:12px;
+127
+text-align:center;
+128
+}
+129
+ 
+130
+.galeria{
+131
+display:grid;
+132
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+133
+gap:20px;
+134
+}
+135
+ 
+136
+.item{
+137
+height:250px;
+138
+background:#ddd;
+139
+border-radius:12px;
+140
+display:flex;
+141
+justify-content:center;
+142
+align-items:center;
+143
+font-weight:bold;
+144
+}
+145
+ 
+146
+.contato{
+147
+text-align:center;
+148
+}
+149
+ 
+150
+footer{
+151
+background:#111;
+152
+color:white;
+153
+padding:30px;
+154
+text-align:center;
+155
+}
+156
+ 
+157
+</style>
+158
+ 
+159
+</head>
+160
+ 
+161
+<body>
+162
+ 
+163
+<header>
+164
+ 
+165
+<div class="logo">BAITA LAB</div>
+166
+ 
+167
+<nav>
+168
+#servicosServiços</a>
+169
+#como-funcionaComo Funciona</a>
+170
+#contatoContato</a>
+171
+</nav>
+172
+ 
+173
+</header>
+174
+ 
+175
+<section class="hero">
+176
+ 
+177
+<h1>Impressão 3D Profissional</h1>
+178
+ 
+179
+<p>
+180
+Peças técnicas, personalizados, protótipos e soluções criativas produzidas com tecnologia de impressão 3D.
+181
+</p>
+182
+ 
+183
+#WhatsApp</a>
+184
+#Solicitar Orçamento</a>
+185
+ 
+186
+</section>
+187
+ 
+188
+<section id="servicos">
+189
+ 
+190
+<h2 class="titulo">Nossos Serviços</h2>
+191
+ 
+192
+<div class="cards">
+193
+ 
+194
+<div class="card">
+195
+<h3>Impressão 3D</h3>
+196
+<p>Produção sob demanda de peças personalizadas.</p>
+197
+</div>
+198
+ 
+199
+<div class="card">
+200
+<h3>Protótipos</h3>
+201
+<p>Validação rápida de projetos e ideias.</p>
+202
+</div>
+203
+ 
+204
+<div class="card">
+205
+<h3>Peças Técnicas</h3>
+206
+<p>Reposição e fabricação de componentes.</p>
+207
+</div>
+208
+ 
+209
+<div class="card">
+210
+<h3>Modelagem 3D</h3>
+211
+<p>Transformamos sua ideia em modelo digital.</p>
+212
+</div>
+213
+ 
+214
+</div>
+215
+ 
+216
+</section>
+217
+ 
+218
+<section id="como-funciona">
+219
+ 
+220
+<h2 class="titulo">Como Funciona</h2>
+221
+ 
+222
+<div class="passos">
+223
+ 
+224
+<div class="passo">
+225
+<h3>1</h3>
+226
+<p>Envie sua ideia ou arquivo.</p>
+227
+</div>
+228
+ 
+229
+<div class="passo">
+230
+<h3>2</h3>
+231
+<p>Analisamos a viabilidade.</p>
+232
+</div>
+233
+ 
+234
+<div class="passo">
+235
+<h3>3</h3>
+236
+<p>Enviamos orçamento.</p>
+237
+</div>
+238
+ 
+239
+<div class="passo">
+240
+<h3>4</h3>
+241
+<p>Produzimos e entregamos.</p>
+242
+</div>
+243
+ 
+244
+</div>
+245
+ 
+246
+</section>
+247
+ 
+248
+<section>
+249
+ 
+250
+<h2 class="titulo">Projetos</h2>
+251
+ 
+252
+<div class="galeria">
+253
+ 
+254
+<div class="item">Projeto 1</div>
+255
+<div class="item">Projeto 2</div>
+256
+<div class="item">Projeto 3</div>
+257
+<div class="item">Projeto 4</div>
+258
+ 
+259
+</div>
+260
+ 
+261
+</section>
+262
+ 
+263
+<section id="contato">
+264
+ 
+265
+<h2 class="titulo">Contato</h2>
+266
+ 
+267
+<div class="contato">
+268
+ 
+269
+<p><strong>WhatsApp:</strong> (51) XXXXX-XXXX</p>
+270
+ 
+271
+<p><strong>Email:</strong> contato@baitalab.com.br</p>
+272
+ 
+273
+<p><strong>Instagram:</strong> @baitalab</p>
+274
+ 
+275
+</div>
+276
+ 
+277
+</section>
+278
+ 
+279
+<footer>
+280
+ 
+281
+<p>© 2026 Baita Lab - Impressão 3D</p>
+282
+ 
+283
+</footer>
+284
+ 
+285
+</body>
+286
+</html>
