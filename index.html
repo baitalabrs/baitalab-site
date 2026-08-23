@@ -1,523 +1,109 @@
 <!DOCTYPE html>
-2
 <html lang="pt-BR">
-3
- 
-4
 <head>
-5
 <meta charset="UTF-8">
-6
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-7
- 
-8
-<title>Baita Lab | Impressão 3D</title>
-9
- 
-10
+<title>Baita Lab</title>
 <style>
-11
- 
-12
-*{
-13
-margin:0;
-14
-padding:0;
-15
-box-sizing:border-box;
-16
-}
-17
- 
-18
 body{
-19
-font-family:Segoe UI, Arial, sans-serif;
-20
-background:
-21
-radial-gradient(circle at top left,#00b14033,transparent 350px),
-22
-radial-gradient(circle at top right,#ffc40022,transparent 350px),
-23
-radial-gradient(circle at bottom left,#e3061333,transparent 350px),
-24
-#0b0b0b;
-25
+margin:0;
+background:#0b0b0b;
 color:white;
-26
+font-family:Arial,sans-serif;
+text-align:center;
 }
-27
- 
-28
+
 header{
-29
-text-align:center;
-30
 padding:50px 20px;
-31
-border-bottom:2px solid #00b140;
-32
+border-bottom:3px solid #00b140;
 }
-33
- 
-34
-.logo{
-35
-max-width:800px;
-36
-width:90%;
-37
-}
-38
- 
-39
-.slogan{
-40
-margin-top:20px;
-41
-font-size:1.6rem;
-42
-font-weight:600;
-43
-}
-44
- 
-45
-.slogan span{
-46
-color:#00b140;
-47
-}
-48
- 
-49
-.hero{
-50
-text-align:center;
-51
-padding:80px 20px;
-52
-}
-53
- 
-54
-.hero h1{
-55
-font-size:3rem;
-56
-margin-bottom:20px;
-57
-}
-58
- 
-59
-.hero p{
-60
-max-width:800px;
-61
-margin:auto;
-62
-line-height:1.8;
-63
-color:#d7d7d7;
-64
-font-size:1.15rem;
-65
-}
-66
- 
-67
-.botao{
-68
-display:inline-block;
-69
-margin-top:35px;
-70
-background:#00b140;
-71
-color:white;
-72
-padding:16px 35px;
-73
-border-radius:10px;
-74
-text-decoration:none;
-75
-font-weight:bold;
-76
-transition:0.3s;
-77
-}
-78
- 
-79
-.botao:hover{
-80
-background:#008a33;
-81
-}
-82
- 
-83
-.secao{
-84
-max-width:1200px;
-85
-margin:auto;
-86
-padding:80px 20px;
-87
-}
-88
- 
-89
-.secao h2{
-90
-text-align:center;
-91
-color:#ffc400;
-92
-margin-bottom:40px;
-93
-font-size:2.2rem;
-94
-}
-95
- 
-96
-.cards{
-97
-display:grid;
-98
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-99
-gap:20px;
-100
-}
-101
- 
-102
-.card{
-103
-background:#161616;
-104
-border:1px solid #2d2d2d;
-105
-border-radius:15px;
-106
-padding:25px;
-107
-transition:.3s;
-108
-}
-109
- 
-110
-.card:hover{
-111
-transform:translateY(-5px);
-112
-border-color:#00b140;
-113
-}
-114
- 
-115
-.card h3{
-116
-color:#00b140;
-117
+
+h1{
+font-size:48px;
 margin-bottom:10px;
-118
 }
-119
- 
-120
-.card p{
-121
-color:#d0d0d0;
-122
-line-height:1.7;
-123
-}
-124
- 
-125
-.destaque{
-126
-background:linear-gradient(135deg,#00b140,#008a33);
-127
-text-align:center;
-128
-padding:70px 20px;
-129
-}
-130
- 
-131
-.destaque h2{
-132
-color:white;
-133
-margin-bottom:15px;
-134
-}
-135
- 
-136
-.contato{
-137
-text-align:center;
-138
-line-height:2.5;
-139
-font-size:1.1rem;
-140
-}
-141
- 
-142
-footer{
-143
-border-top:2px solid #00b140;
-144
-text-align:center;
-145
-padding:25px;
-146
-background:#000;
-147
-color:#bdbdbd;
-148
-}
-149
- 
-150
-@media(max-width:768px){
-151
- 
-152
-.hero h1{
-153
-font-size:2rem;
-154
-}
-155
- 
-156
+
 .slogan{
-157
-font-size:1.2rem;
-158
+font-size:24px;
+color:#00b140;
 }
-159
- 
-160
+
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
 }
-161
- 
-162
+
+.botao{
+display:inline-block;
+background:#00b140;
+color:white;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
 </style>
-163
 </head>
-164
- 
-165
+
 <body>
-166
- 
-167
+
 <header>
-168
- 
-169
-baitalab.logo.jpeg.jpeg
-170
- 
-171
-<p class="slogan">
-172
-Se a ideia é <span>BAITA</span>, a gente imprime!
-173
-</p>
-174
- 
-175
+<h1>BAITA LAB</h1>
+<p class="slogan">Se a ideia é BAITA, a gente imprime!</p>
 </header>
-176
- 
-177
-<section class="hero">
-178
- 
-179
-<h1>
-180
-Transformamos ideias em peças reais com Impressão 3D
-181
-</h1>
-182
- 
-183
+
+<section>
+
+<h2>Impressão 3D Profissional</h2>
+
 <p>
-184
-Produzimos protótipos, miniaturas, brindes personalizados,
-185
-peças técnicas e soluções sob medida para pessoas e empresas.
-186
-Transforme sua ideia em realidade com a Baita Lab.
-187
+Protótipos, peças personalizadas, brindes, miniaturas e soluções sob medida.
 </p>
-188
- 
-189
-<a href="https://wa.me/5551996517078"
-190
-class="botao"
-191
-target="_blank">
-192
+
+<p>
+<a class="botao" href="https://wa.me/5551996517078">
 Solicitar Orçamento
-193
 </a>
-194
- 
-195
-</section>
-196
- 
-197
-<section class="secao">
-198
- 
-199
-<h2>Nossos Serviços</h2>
-200
- 
-201
-<div class="cards">
-202
- 
-203
-<div class="card">
-204
-<h3>Impressão 3D</h3>
-205
-<p>Produção profissional de peças sob demanda.</p>
-206
-</div>
-207
- 
-208
-<div class="card">
-209
-<h3>Prototipagem</h3>
-210
-<p>Validação rápida de projetos e produtos.</p>
-211
-</div>
-212
- 
-213
-<div class="card">
-214
-<h3>Peças Personalizadas</h3>
-215
-<p>Soluções exclusivas para qualquer necessidade.</p>
-216
-</div>
-217
- 
-218
-<div class="card">
-219
-<h3>Miniaturas e Brindes</h3>
-220
-<p>Itens criativos para decoração e divulgação.</p>
-221
-</div>
-222
- 
-223
-</div>
-224
- 
-225
-</section>
-226
- 
-227
-<section class="destaque">
-228
- 
-229
-<h2>
-230
-Se a ideia é BAITA, a gente imprime.
-231
-</h2>
-232
- 
-233
-<p>
-234
-Tecnologia, criatividade e precisão em cada projeto.
-235
 </p>
-236
- 
-237
+
 </section>
-238
- 
-239
-<section class="secao">
-240
- 
-241
-<h2>Contato</h2>
-242
- 
-243
-<div class="contato">
-244
- 
-245
-<p>📱 WhatsApp: (51) 99651-7078</p>
-246
- 
-247
-<p>📧 baitalab.rs@gmail.com</p>
-248
- 
-249
-<p>📷 Instagram: @baitalab.rs</p>
-250
- 
-251
+
+<section>
+
+<div class="card">
+<h3>Impressão 3D</h3>
+<p>Produção de peças sob demanda.</p>
 </div>
-252
- 
-253
+
+<div class="card">
+<h3>Prototipagem</h3>
+<p>Validação rápida de projetos.</p>
+</div>
+
+<div class="card">
+<h3>Peças Personalizadas</h3>
+<p>Soluções exclusivas para cada necessidade.</p>
+</div>
+
 </section>
-254
- 
-255
-<footer>
-256
- 
-257
-© 2026 Baita Lab - Impressão 3D
-258
- 
-259
-</footer>
-260
- 
-261
+
+<section>
+<h2>Contato</h2>
+
+<p>WhatsApp: (51) 99651-7078</p>
+<p>Email: baitalab.rs@gmail.com</p>
+<p>Instagram: @baitalab.rs</p>
+
+</section>
+
 </body>
-262
 </html>
