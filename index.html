@@ -3,90 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baita Lab</title>
+<title>Baita Lab | Impressão 3D</title>
+
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-background:#0b0b0b;
-color:white;
-font-family:Arial,sans-serif;
-text-align:center;
+    font-family:Arial, sans-serif;
+    background:
+    radial-gradient(circle at top left,#00b14030,transparent 300px),
+    radial-gradient(circle at top right,#ffc40020,transparent 300px),
+    radial-gradient(circle at bottom left,#e3061330,transparent 300px),
+    #0b0b0b;
+    color:white;
 }
 
 header{
-padding:50px 20px;
-border-bottom:3px solid #00b140;
+    text-align:center;
+    padding:60px 20px;
+    border-bottom:3px solid #00b140;
 }
 
 h1{
-font-size:48px;
-margin-bottom:10px;
+    font-size:60px;
+    margin-bottom:15px;
 }
 
 .slogan{
-font-size:24px;
-color:#00b140;
+    color:#00b140;
+    font-size:28px;
+    font-weight:bold;
 }
 
 section{
-padding:60px 20px;
-max-width:1000px;
-margin:auto;
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#d0d0d0;
+    line-height:1.8;
+    font-size:18px;
 }
 
 .botao{
-display:inline-block;
-background:#00b140;
-color:white;
-padding:15px 30px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin-top:20px;
+    display:inline-block;
+    margin-top:30px;
+    background:#00b140;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.cards{
+    display:grid;
+    gap:20px;
 }
 
 .card{
-background:#1c1c1c;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
+    background:#181818;
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #2c2c2c;
 }
+
+.card h3{
+    color:#00b140;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:3px solid #00b140;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+h1{
+    font-size:38px;
+}
+
+.slogan{
+    font-size:20px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <h1>BAITA LAB</h1>
-<p class="slogan">Se a ideia é BAITA, a gente imprime!</p>
+
+<p class="slogan">
+Se a ideia é BAITA, a gente imprime!
+</p>
+
 </header>
 
-<section>
+<section class="hero">
 
-<h2>Impressão 3D Profissional</h2>
+<h2>Transformamos ideias em peças reais</h2>
 
 <p>
-Protótipos, peças personalizadas, brindes, miniaturas e soluções sob medida.
+Produzimos protótipos, peças personalizadas, brindes,
+miniaturas e soluções sob medida utilizando tecnologia de impressão 3D.
 </p>
 
-<p>
-<a class="botao" href="https://wa.me/5551996517078">
+<a class="botao" href="https://wa.me/5551996517078" target="_blank">
 Solicitar Orçamento
 </a>
-</p>
 
 </section>
 
 <section>
 
+<h2>Nossos Serviços</h2>
+
+<div class="cards">
+
 <div class="card">
 <h3>Impressão 3D</h3>
-<p>Produção de peças sob demanda.</p>
+<p>Produção profissional de peças sob demanda.</p>
 </div>
 
 <div class="card">
 <h3>Prototipagem</h3>
-<p>Validação rápida de projetos.</p>
+<p>Validação rápida de projetos e produtos.</p>
 </div>
 
 <div class="card">
@@ -94,16 +163,30 @@ Solicitar Orçamento
 <p>Soluções exclusivas para cada necessidade.</p>
 </div>
 
+<div class="card">
+<h3>Miniaturas e Brindes</h3>
+<p>Itens criativos para decoração e divulgação.</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
+
 <h2>Contato</h2>
 
-<p>WhatsApp: (51) 99651-7078</p>
-<p>Email: baitalab.rs@gmail.com</p>
-<p>Instagram: @baitalab.rs</p>
+<p>📱 WhatsApp: (51) 99651-7078</p>
+<p>📧 baitalab.rs@gmail.com</p>
+<p>📷 Instagram: @baitalab.rs</p>
 
 </section>
+
+<footer>
+
+© 2026 Baita Lab - Impressão 3D
+
+</footer>
 
 </body>
 </html>
