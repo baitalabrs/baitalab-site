@@ -2,594 +2,486 @@
 2
 <html lang="pt-BR">
 3
-<head>
+ 
 4
-<meta charset="UTF-8">
+<head>
 5
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 6
- 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 7
-<title>Baita Lab | Impressão 3D</title>
+ 
 8
- 
+<title>Baita Lab | Impressão 3D</title>
 9
-https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
+ 
 10
- 
-11
 <style>
+11
+ 
 12
- 
-13
 *{
-14
+13
 margin:0;
-15
+14
 padding:0;
-16
+15
 box-sizing:border-box;
+16
+font-family:Segoe UI, Arial, sans-serif;
 17
-font-family:'Poppins',sans-serif;
+}
 18
-}
+ 
 19
- 
-20
 body{
+20
+background:#0d0d0d;
 21
-background:#0b0b0b;
+color:white;
 22
-color:#fff;
+}
 23
-}
+ 
 24
- 
-25
 header{
+25
+background:#000;
 26
-position:fixed;
+border-bottom:3px solid #00b140;
 27
-top:0;
+padding:20px;
 28
-left:0;
+text-align:center;
 29
-width:100%;
+}
 30
-background:rgba(0,0,0,.95);
+ 
 31
-padding:15px 40px;
+.logo{
 32
-display:flex;
+font-size:3rem;
 33
-justify-content:space-between;
-34
-align-items:center;
-35
-border-bottom:2px solid #00b140;
-36
-z-index:1000;
-37
-}
-38
- 
-39
-.logo img{
-40
-height:60px;
-41
-}
-42
- 
-43
-.menu a{
-44
-color:white;
-45
-text-decoration:none;
-46
-margin-left:20px;
-47
-font-weight:600;
-48
-}
-49
- 
-50
-.hero{
-51
-min-height:100vh;
-52
-display:flex;
-53
-flex-direction:column;
-54
-justify-content:center;
-55
-align-items:center;
-56
-text-align:center;
-57
-padding:140px 20px 60px;
-58
-background:
-59
-linear-gradient(
-60
-135deg,
-61
-#000,
-62
-#181818
-63
-);
-64
-}
-65
- 
-66
-.hero img{
-67
-width:70%;
-68
-max-width:700px;
-69
-margin-bottom:40px;
-70
-}
-71
- 
-72
-.hero h1{
-73
-font-size:4rem;
-74
-margin-bottom:20px;
-75
-}
-76
- 
-77
-.hero span{
-78
-color:#00b140;
-79
-}
-80
- 
-81
-.hero p{
-82
-max-width:800px;
-83
-font-size:1.2rem;
-84
-line-height:1.8;
-85
-color:#d8d8d8;
-86
-}
-87
- 
-88
-.botao{
-89
-display:inline-block;
-90
-margin-top:35px;
-91
-padding:18px 35px;
-92
-background:#00b140;
-93
-color:white;
-94
-text-decoration:none;
-95
-border-radius:10px;
-96
 font-weight:bold;
-97
-font-size:18px;
-98
-transition:0.3s;
-99
+34
 }
-100
+35
  
-101
-.botao:hover{
-102
-background:#008c34;
-103
-transform:translateY(-4px);
-104
+36
+.logo .baita{
+37
+color:#ffffff;
+38
 }
-105
+39
  
-106
-section{
-107
-padding:90px 20px;
-108
-max-width:1200px;
-109
-margin:auto;
-110
-}
-111
- 
-112
-h2{
-113
-text-align:center;
-114
-font-size:2.5rem;
-115
-margin-bottom:50px;
-116
-color:#FFC400;
-117
-}
-118
- 
-119
-.cards{
-120
-display:grid;
-121
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-122
-gap:25px;
-123
-}
-124
- 
-125
-.card{
-126
-background:#171717;
-127
-padding:30px;
-128
-border-radius:20px;
-129
-border:1px solid #2b2b2b;
-130
-transition:0.3s;
-131
-}
-132
- 
-133
-.card:hover{
-134
-transform:translateY(-8px);
-135
-border-color:#00b140;
-136
-}
-137
- 
-138
-.card h3{
-139
-margin-bottom:15px;
-140
+40
+.logo .verde{
+41
 color:#00b140;
-141
+42
 }
-142
+43
  
-143
-.card p{
-144
-color:#d0d0d0;
-145
-line-height:1.7;
-146
+44
+.logo .vermelho{
+45
+color:#e30613;
+46
 }
-147
+47
  
-148
-.cta{
-149
-background:linear-gradient(
-150
-135deg,
-151
-#00b140,
-152
-#008c34
-153
-);
-154
+48
+.logo .amarelo{
+49
+color:#ffc400;
+50
+}
+51
+ 
+52
+.hero{
+53
+padding:100px 20px;
+54
 text-align:center;
-155
-padding:80px 20px;
-156
+55
+background:linear-gradient(135deg,#000,#1f1f1f);
+56
 }
-157
+57
  
-158
-.cta h2{
-159
-color:white;
-160
+58
+.hero h1{
+59
+font-size:3rem;
+60
 margin-bottom:20px;
-161
+61
 }
+62
+ 
+63
+.hero p{
+64
+max-width:800px;
+65
+margin:auto;
+66
+font-size:1.2rem;
+67
+line-height:1.8;
+68
+color:#d4d4d4;
+69
+}
+70
+ 
+71
+.botao{
+72
+display:inline-block;
+73
+margin-top:30px;
+74
+background:#00b140;
+75
+color:white;
+76
+text-decoration:none;
+77
+padding:15px 30px;
+78
+border-radius:10px;
+79
+font-weight:bold;
+80
+}
+81
+ 
+82
+.botao:hover{
+83
+background:#008b31;
+84
+}
+85
+ 
+86
+.secao{
+87
+max-width:1200px;
+88
+margin:auto;
+89
+padding:80px 20px;
+90
+}
+91
+ 
+92
+.secao h2{
+93
+text-align:center;
+94
+margin-bottom:40px;
+95
+color:#ffc400;
+96
+}
+97
+ 
+98
+.cards{
+99
+display:grid;
+100
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+101
+gap:20px;
+102
+}
+103
+ 
+104
+.card{
+105
+background:#181818;
+106
+padding:25px;
+107
+border-radius:15px;
+108
+border:1px solid #2e2e2e;
+109
+}
+110
+ 
+111
+.card h3{
+112
+color:#00b140;
+113
+margin-bottom:10px;
+114
+}
+115
+ 
+116
+.cta{
+117
+background:linear-gradient(135deg,#00b140,#008b31);
+118
+text-align:center;
+119
+padding:70px 20px;
+120
+}
+121
+ 
+122
+.cta h2{
+123
+margin-bottom:20px;
+124
+}
+125
+ 
+126
+.contato{
+127
+text-align:center;
+128
+line-height:2;
+129
+font-size:1.1rem;
+130
+}
+131
+ 
+132
+footer{
+133
+background:#000;
+134
+text-align:center;
+135
+padding:25px;
+136
+border-top:3px solid #00b140;
+137
+color:#ccc;
+138
+}
+139
+ 
+140
+@media(max-width:768px){
+141
+ 
+142
+.hero h1{
+143
+font-size:2rem;
+144
+}
+145
+ 
+146
+.logo{
+147
+font-size:2rem;
+148
+}
+149
+ 
+150
+}
+151
+ 
+152
+</style>
+153
+</head>
+154
+ 
+155
+<body>
+156
+ 
+157
+<header>
+158
+ 
+159
+<div class="logo">
+160
+<span class="baita">BAITA</span><span class="verde">|</span><span class="vermelho">a</span><span class="amarelo">b</span>
+161
+</div>
 162
  
 163
-.contato{
+<p>Impressão 3D Profissional</p>
 164
-text-align:center;
+ 
 165
-font-size:1.2rem;
+</header>
 166
-line-height:2.2;
+ 
 167
-}
+<section class="hero">
 168
  
 169
-footer{
+<h1>
 170
-background:black;
+Transformando ideias em realidade com Impressão 3D
 171
-padding:30px;
+</h1>
 172
-text-align:center;
+ 
 173
-color:#ccc;
+<p>
 174
-border-top:2px solid #00b140;
+Produzimos peças personalizadas, protótipos, brindes, miniaturas e soluções sob medida para pessoas e empresas.
 175
-}
+</p>
 176
  
 177
-@media(max-width:768px){
+<a href="https://wa.me/5551996517078" class="botao" target="_blank">
 178
- 
+Solicitar Orçamento
 179
-.hero h1{
+</a>
 180
-font-size:2.3rem;
+ 
 181
-}
+</section>
 182
  
 183
-.menu{
+<section class="secao">
 184
-display:none;
+ 
 185
-}
+<h2>Nossos Serviços</h2>
 186
  
 187
-.hero img{
+<div class="cards">
 188
-width:95%;
+ 
 189
-}
+<div class="card">
 190
- 
+<h3>Impressão 3D</h3>
 191
-}
+<p>Peças produzidas sob demanda com alta qualidade.</p>
 192
- 
+</div>
 193
-</style>
+ 
 194
- 
+<div class="card">
 195
-</head>
+<h3>Prototipagem</h3>
 196
- 
+<p>Valide projetos antes da produção final.</p>
 197
-<body>
+</div>
 198
  
 199
-<header>
+<div class="card">
 200
- 
+<h3>Peças Personalizadas</h3>
 201
-<div class="logo">
+<p>Soluções criadas conforme sua necessidade.</p>
 202
-baitalab.logo.jpeg.jpeg
+</div>
 203
-</div>
+ 
 204
- 
+<div class="card">
 205
-<div class="menu">
+<h3>Miniaturas e Brindes</h3>
 206
-#servicosServiços</a>
+<p>Itens decorativos e promocionais exclusivos.</p>
 207
-#contatoContato</a>
-208
 </div>
+208
+ 
 209
- 
+</div>
 210
-</header>
+ 
 211
- 
+</section>
 212
-<section class="hero">
+ 
 213
- 
+<section class="cta">
 214
-baitalab.logo.jpeg.jpeg
+ 
 215
- 
+<h2>Se a ideia é BAITA, a gente imprime.</h2>
 216
-<h1>
-217
-Transformando ideias em
-218
-<span>realidade</span>
-219
-com Impressão 3D
-220
-</h1>
-221
  
+217
+<a href="https://wa.me/5551996517078" class="botao" target="_blank">
+218
+Fale no WhatsApp
+219
+</a>
+220
+ 
+221
+</section>
 222
-<p>
+ 
 223
-Criamos protótipos, miniaturas, peças técnicas, brindes personalizados
+<section class="secao">
 224
-e soluções sob medida utilizando tecnologia de impressão 3D de alta qualidade.
+ 
 225
-</p>
+<h2>Contato</h2>
 226
  
 227
-<a href="https://wa.me/5551996517078" class="botao" target="_blank">
+<div class="contato">
 228
-Solicitar Orçamento
-229
-</a>
-230
  
+229
+<p>📱 WhatsApp: (51) 99651-7078</p>
+230
+<p>📧 baitalab.rs@gmail.com</p>
 231
-</section>
+<p>📷 Instagram: @baitalab.rs</p>
 232
  
 233
-<section id="servicos">
+</div>
 234
  
 235
-<h2>Nossos Serviços</h2>
+</section>
 236
  
 237
-<div class="cards">
+<footer>
 238
  
 239
-<div class="card">
+<p>© 2026 Baita Lab - Impressão 3D</p>
 240
-<h3>Impressão 3D</h3>
+ 
 241
-<p>Peças personalizadas produzidas sob demanda.</p>
-242
-</div>
-243
- 
-244
-<div class="card">
-245
-<h3>Prototipagem</h3>
-246
-<p>Desenvolvimento rápido para validação de projetos.</p>
-247
-</div>
-248
- 
-249
-<div class="card">
-250
-<h3>Peças Técnicas</h3>
-251
-<p>Soluções para empresas, manutenção e reposição.</p>
-252
-</div>
-253
- 
-254
-<div class="card">
-255
-<h3>Miniaturas e Brindes</h3>
-256
-<p>Produtos exclusivos para eventos e decoração.</p>
-257
-</div>
-258
- 
-259
-</div>
-260
- 
-261
-</section>
-262
- 
-263
-<div class="cta">
-264
- 
-265
-<h2>
-266
-Se a ideia é BAITA, a gente imprime.
-267
-</h2>
-268
- 
-269
-<a href="https://wa.me/5551996517078" class="botao" target="_blank">
-270
-Falar no WhatsApp
-271
-</a>
-272
- 
-273
-</div>
-274
- 
-275
-<section id="contato">
-276
- 
-277
-<h2>Contato</h2>
-278
- 
-279
-<div class="contato">
-280
- 
-281
-<p>📱 WhatsApp: (51) 99651-7078</p>
-282
- 
-283
-<p>📧 baitalab.rs@gmail.com</p>
-284
- 
-285
-<p>📷 Instagram: @baitalab.rs</p>
-286
- 
-287
-</div>
-288
- 
-289
-</section>
-290
- 
-291
-<footer>
-292
- 
-293
-© 2026 Baita Lab - Impressão 3D
-294
- 
-295
 </footer>
-296
+242
  
-297
+243
 </body>
-298
+244
 </html>
